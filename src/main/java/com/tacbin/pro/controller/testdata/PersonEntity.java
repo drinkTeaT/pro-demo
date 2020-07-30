@@ -17,5 +17,5 @@ public class PersonEntity implements Serializable {
     private String phoneNumber;
     private String emailAddr;
     private String englishName;
-    private String csvFile;
+    private String headImg;
 }
