@@ -45,6 +45,12 @@
             <artifactId>spring-boot-starter-websocket</artifactId>
             <version>2.3.2.RELEASE</version>
         </dependency>
+        <!--随机数据生成-->
+        <dependency>
+            <groupId>com.github.binarywang</groupId>
+            <artifactId>java-testdata-generator</artifactId>
+            <version>1.1.2</version>
+        </dependency>
     </dependencies>
 
     <build>
