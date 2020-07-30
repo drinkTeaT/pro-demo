@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/sockjs-client/1.4.0/sockjs.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script>
+    function op() {
+        var s = new SockJS('/socket');
+        var stompClient = Stomp.over(s);
+        stompClient.connect({}, function () {
+            console.log('notice socket connected!');
+            stompClient.subscribe('/topic/notice', function (data) {
+                console.log(data.body)
+            });
+        });
+    };
+    op()
+</script>
+</html>
