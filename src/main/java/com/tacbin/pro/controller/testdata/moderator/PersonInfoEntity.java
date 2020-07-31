@@ -10,12 +10,18 @@ import com.tacbin.pro.controller.testdata.PersonEntity;
  * @date 2020/7/31 17:51
  */
 public class PersonInfoEntity implements IPersonInfo {
+    private String headImg;
+
     @Override
     public void setProperty(PersonEntity person) {
         // 名字
         GenericGenerator generator = ChineseNameGenerator.getInstance();
         person.setName(generator.generate());
         // 头像
-        person.setHeadImg("//image");
+        person.setHeadImg(headImg);
+    }
+
+    public PersonInfoEntity(String headImg) {
+        this.headImg = headImg;
     }
 }

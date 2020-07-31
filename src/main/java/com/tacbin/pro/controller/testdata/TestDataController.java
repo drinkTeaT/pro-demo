@@ -37,12 +37,12 @@ public class TestDataController {
     }
 
     private List<PersonEntity> acqInfo(int count) {
-        IPersonInfo personInfo = new PersonInfoEntity();
+        IPersonInfo personInfo = new PersonInfoEntity("headImage");
         return genPersonEntities(personInfo, count);
     }
 
     private List<PersonEntity> inhumanInfo(int count) {
-        IPersonInfo personInfo = new PersonInfoEntity();
+        IPersonInfo personInfo = new PersonInfoEntity("headImage");
         IPersonInfo intimateInfo = new IntimatePersonInfo(personInfo);
         IPersonInfo insaneInfo = new InsanePersonInfo(intimateInfo);
         IPersonInfo inhumanInfo = new InhumanPersonInfo(insaneInfo);
@@ -50,20 +50,20 @@ public class TestDataController {
     }
 
     private List<PersonEntity> insaneInfo(int count) {
-        IPersonInfo personInfo = new PersonInfoEntity();
+        IPersonInfo personInfo = new PersonInfoEntity("headImage");
         IPersonInfo intimateInfo = new IntimatePersonInfo(personInfo);
         IPersonInfo insaneInfo = new InsanePersonInfo(intimateInfo);
         return genPersonEntities(insaneInfo, count);
     }
 
     private List<PersonEntity> intimateInfo(int count) {
-        IPersonInfo personInfo = new PersonInfoEntity();
+        IPersonInfo personInfo = new PersonInfoEntity("headImage");
         IPersonInfo intimateInfo = new IntimatePersonInfo(personInfo);
         return genPersonEntities(intimateInfo, count);
     }
 
     private List<PersonEntity> usefulInfo(int count) {
-        IPersonInfo personInfo = new PersonInfoEntity();
+        IPersonInfo personInfo = new PersonInfoEntity("headImage");
         IPersonInfo usefulInfo = new UsefulPersonInfo(personInfo);
         return genPersonEntities(usefulInfo, count);
     }
