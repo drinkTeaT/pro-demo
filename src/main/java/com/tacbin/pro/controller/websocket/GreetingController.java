@@ -21,11 +21,6 @@ public class GreetingController {
     public GreetingController() {
     }
 
-    @RequestMapping({"/helloSocket"})
-    public String index() {
-        return "/hello/index";
-    }
-
     @MessageMapping({"/change-notice"})
     public void greeting(String value) {
         System.out.println("收到信息" + value);
