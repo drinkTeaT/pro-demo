@@ -2,7 +2,7 @@ package com.tacbin.pro.fragment;
 
 /**
  * @author EDZ
- * @description Long类型直接用 ==
+ * @description Long类型直接用 == -128~127可以直接比较，< >会自动拆箱
  * @date 2020/8/13 10:51
  */
 public class LongCompare128 {
