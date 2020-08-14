@@ -13,33 +13,39 @@ public class LongCompare128 {
 
     private static void equals() {
         System.out.println("-- equals begin --");
-        Long a = 10l;
-        Long b = 10l;
-        System.out.println(a == b); // true
+        Long a = 10L;
+        Long b = 10L;
+        // true
+        System.out.println(a == b);
 
-        Long c = 128l;
-        Long d = 128l;
-        System.out.println(c == d); // false
+        Long c = 128L;
+        Long d = 128L;
+        // false
+        System.out.println(c == d);
 
         Long e = Long.valueOf("129");
         Long f = Long.valueOf("129");
-        System.out.println(e == f); // false
+        // false
+        System.out.println(e == f);
         System.out.println("-- equals end --");
     }
 
     private static void bigger() {
         System.out.println("-- bigger begin --");
-        Long a = 11l;
-        Long b = 10l;
-        System.out.println(a > b); // true
+        Long a = 11L;
+        Long b = 10L;
+        // true
+        System.out.println(a > b);
 
-        Long c = 129l;
-        Long d = 128l;
-        System.out.println(c > d); // true
+        Long c = 129L;
+        Long d = 128L;
+        // true
+        System.out.println(c > d);
 
         Long e = Long.valueOf("130");
         Long f = Long.valueOf("129");
-        System.out.println(e > f); // true
+        // true
+        System.out.println(e > f);
 
     }
 }
