@@ -1,0 +1,1 @@
+validate只能在controller入参的时候使用，其他地方不生效

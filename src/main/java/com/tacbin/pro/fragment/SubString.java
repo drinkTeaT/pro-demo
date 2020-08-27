@@ -13,5 +13,7 @@ public class SubString {
         System.out.println(nums.substring(1, 2));
         System.out.println(nums.substring(2, 4));
         System.out.println(nums.substring(5, 6));
+        String s = "";
+        System.out.println(s.substring(0,0));
     }
 }
